@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 menu.onclick = function myFunction () {
 
   var x = document.getElementById("myTopnav");
