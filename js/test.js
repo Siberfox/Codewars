@@ -51,7 +51,7 @@ arr3.concat(4, 5);
 arr3.concat([4, 1]);
    console.log(arr3.concat([4, 1]));
 arr3.concat([4, 5], [6, 7]);
-   console.log(arr3.concat([4, 5], [6, 7]));
+   console.log(arr3.concat([4, 5], [6, [4, 7]]));
 
 var arr2 = ["Киви", "Апельсины", "Груши"];
    console.log(arr2.sort());
