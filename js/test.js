@@ -1,5 +1,6 @@
-/* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
+/* eslint-disable no-console */
+
 let a = 3;
 let b = 5;
 
