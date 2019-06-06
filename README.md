@@ -4,3 +4,5 @@ Test number 1 1 3
 555-555
 
 v300n2000
+
+doubledamage
