@@ -7,4 +7,4 @@ v300n2000
 
 doubledamage
 
-<Lorem ipsum>
+Lorem ipsum
