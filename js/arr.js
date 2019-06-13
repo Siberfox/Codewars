@@ -45,13 +45,14 @@ console.log(`${arr0[1]} and ${arr0[2]}`);
 console.log(`${arr0[1]} or ${arr0[2]}`);
 
 // Sort
+
 const arr2 = ['Киви', 'Апельсины', 'Груши'];
 console.log(arr2.sort());
 
 const arr6 = [5, 2, 1, -10, 8, 15];
 
 function compareReversed(a, b) {
-  return b - a;
+  return a - b;
 }
 arr6.sort(compareReversed);
 console.log(arr6);
@@ -61,15 +62,16 @@ const arr7 = [1, 2, 3, 4, 5];
 function compareRandom() {
   return Math.random() - 0.5;
 }
-
 arr7.sort(compareRandom);
 console.log(arr7);
 
 // Concat
-const arr3 = [1, 2, 3];
+
+let arr3 = [1, 2, 3];
+arr3 = arr3.concat(8);
 console.log(arr3.concat(4, 5));
 console.log(arr3.concat([4, 1]));
-console.log(arr3.concat([4, 5], [6, [4, 7]]));
+console.log(arr3.concat([4, 5], [[4, 7]]));
 console.log(arr3);
 
 const arr4 = [1, 2, 3, 3, 5, 3];
