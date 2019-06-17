@@ -1,3 +1,5 @@
+/* eslint-disable func-names */
+/* eslint-disable no-console */
 const result = (num1, num2, num3) => {
   return num1 + num2 - num3;
 };
@@ -27,3 +29,15 @@ function recur() {
 }
 recur();
 console.log(recur());
+
+let y = 0;
+const test = function() {
+  let t = 0;
+  for (y = 0; y < 30; y += 2) {
+    t += 1;
+    console.log(`значение y:${y} / такт номер:${t}`);
+  }
+  return t;
+};
+test();
+console.log(test());
