@@ -31,7 +31,7 @@ recur();
 console.log(recur());
 
 let y = 0;
-const test = function() {
+const test = function () {
   let t = 0;
   for (y = 0; y < 30; y += 2) {
     t += 1;
@@ -41,3 +41,7 @@ const test = function() {
 };
 test();
 console.log(test());
+
+
+
+console.log(USELESS TEXT);
