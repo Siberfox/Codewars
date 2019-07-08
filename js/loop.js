@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 let y = 10;
 for (let x = 0; x < 5; x += 1) {
   console.log((y += 1));

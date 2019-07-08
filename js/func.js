@@ -1,5 +1,14 @@
-/* eslint-disable func-names */
-/* eslint-disable no-console */
+const a = 3;
+const b = 5;
+
+function med(c) {
+  return a + b - c;
+}
+
+console.log(Math.sqrt(med(4)));
+console.log('hi');
+console.log(b);
+
 const result = (num1, num2, num3) => {
   return num1 + num2 - num3;
 };
@@ -31,17 +40,16 @@ recur();
 console.log(recur());
 
 let y = 0;
-const test = function () {
+
+function test() {
   let t = 0;
   for (y = 0; y < 30; y += 2) {
     t += 1;
     console.log(`значение y:${y} / такт номер:${t}`);
   }
   return t;
-};
+}
 test();
 console.log(test());
 
-
-
-console.log(USELESS TEXT);
+console.log('USELESS TEXT');
