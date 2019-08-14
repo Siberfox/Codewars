@@ -1,3 +1,7 @@
+console.log(Number.MAX_SAFE_INTEGER);
+let num = BigInt(9007199254740991);
+console.log(num + 10000000000000000n);
+
 const value = 'Infinity';
 const number = +value;
 console.log(number);
