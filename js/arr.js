@@ -90,3 +90,23 @@ function isBig(element /* index, array */) {
 }
 const filtered = [11, 3, 7, 50, 25].filter(isBig);
 console.log(filtered);
+
+const found = arr5.find(item => item === 5);
+console.log(found);
+
+const array6 = [7, -2, 3, -11, 12, 'z'];
+array6.sort((a, b) => a - b);
+console.log(array6);
+
+console.log(Array.isArray(array6));
+
+function camelize(str) {
+  return str
+    .split('-') // разбивает 'my-long-word' на массив ['my', 'long', 'word']
+    .map(
+      // Переводит в верхний регистр первые буквы всех элементом массива за исключением первого
+      // превращает ['my', 'long', 'word'] в ['my', 'Long', 'Word']
+      (word, index) => (index == 0 ? word : word[0].toUpperCase() + word.slice(1))
+    )
+    .join(''); // соединяет ['my', 'Long', 'Word'] в 'myLongWord'
+}

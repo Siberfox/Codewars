@@ -8,9 +8,9 @@ const t = 0;
 let t2 = t;
 
 while (y < 30) {
-  console.log(`значение y:${(y += 2)} / такт номер:${(t2 += 1)}`);
+  console.log(`value y:${(y += 2)} / step:${(t2 += 1)}`);
 }
 
 do {
-  console.log(`значение y:${(y -= 2)} / такт номер:${(t2 -= 1)}`);
+  console.log(`value y:${(y -= 2)} / step:${(t2 -= 1)}`);
 } while (y > 15);

@@ -1,13 +1,10 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "node": true
     },
-    "extends": [
-        "airbnb",
-        "prettier",
-        "prettier/react"
-    ],
+    "extends": ["airbnb", "prettier"],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
@@ -20,10 +17,15 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
+        "react",
         "prettier"
     ],
     "rules": {
+        "no-plusplus": "off",
+        "no-alert": "off",
+        "no-unused-vars": "warn",
         "no-console": "off",
-        "prettier/prettier": ["error"]
+        "prettier/prettier": ["error"],
+        "prefer-const": "warn"
     }
 };

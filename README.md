@@ -1,4 +1,3 @@
-Test number 1 1 3
-999
+#HELLO
 
-555-555
+This repository is a test for the period of my training.
