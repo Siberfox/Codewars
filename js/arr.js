@@ -1,112 +1,112 @@
-const array = [1, 2, 3, 4];
-console.log(array.length);
+// const array = [1, 2, 3, 4];
+// console.log(array.length);
 
-array.push(9, 10);
-console.log(array.length);
-console.log(array);
+// array.push(9, 10);
+// console.log(array.length);
+// console.log(array);
 
-const f = 'me';
-array.pop();
-array.push(f);
-console.log(array);
-array.unshift('name');
-console.log(array);
-array.shift();
+// const f = 'me';
+// array.pop();
+// array.push(f);
+// console.log(array);
+// array.unshift('name');
+// console.log(array);
+// array.shift();
 
-const array2 = array.map(number => number * number); // Function (es6)
-console.log(array2);
-console.log(array);
+// const array2 = array.map(number => number * number); // Function (es6)
+// console.log(array2);
+// console.log(array);
 
-const joined = array2.join();
-console.log(joined);
-console.log(array2);
+// const joined = array2.join();
+// console.log(joined);
+// console.log(array2);
 
-let c = 'Wo rd';
-c = c.split('');
-console.log(c);
-c = c.join('');
-console.log(c);
+// let c = 'Wo rd';
+// c = c.split('');
+// console.log(c);
+// c = c.join('');
+// console.log(c);
 
-const array0 = [5, 10, 7, 4, 4, 3];
-const deleted = array0.splice(3, 2, 'zzz');
-console.log(array0);
-console.log(deleted);
+// const array0 = [5, 10, 7, 4, 4, 3];
+// const deleted = array0.splice(3, 2, 'zzz');
+// console.log(array0);
+// console.log(deleted);
 
-const copy = array0.slice(1, 4);
-console.log(copy);
-console.log(array0);
+// const copy = array0.slice(1, 4);
+// console.log(copy);
+// console.log(array0);
 
-const arr0 = ['Wind', 'Rain', 'Fire'];
-arr0.reverse();
-console.log(arr0);
+// const arr0 = ['Wind', 'Rain', 'Fire'];
+// arr0.reverse();
+// console.log(arr0);
 
-console.log(`${arr0[1]} and ${arr0[2]}`);
-console.log(`${arr0[1]} or ${arr0[2]}`);
+// console.log(`${arr0[1]} and ${arr0[2]}`);
+// console.log(`${arr0[1]} or ${arr0[2]}`);
 
-// Sort
+// // Sort
 
-const arr2 = ['Киви', 'Апельсины', 'Груши'];
-console.log(arr2.sort());
+// const arr2 = ['Киви', 'Апельсины', 'Груши'];
+// console.log(arr2.sort());
 
-const arr6 = [5, 2, 1, -10, 8, 15];
+// const arr6 = [5, 2, 1, -10, 8, 15];
 
-function compareReversed(a, b) {
-  return a - b;
-}
-arr6.sort(compareReversed);
-console.log(arr6);
+// function compareReversed(a, b) {
+//   return a - b;
+// }
+// arr6.sort(compareReversed);
+// console.log(arr6);
 
-const arr7 = [1, 2, 3, 4, 5];
+// const arr7 = [1, 2, 3, 4, 5];
 
-function compareRandom() {
-  return Math.random() - 0.5;
-}
-arr7.sort(compareRandom);
-console.log(arr7);
+// function compareRandom() {
+//   return Math.random() - 0.5;
+// }
+// arr7.sort(compareRandom);
+// console.log(arr7);
 
-// Concat
+// // Concat
 
-let arr3 = [1, 2, 3];
-arr3 = arr3.concat(8);
-console.log(arr3.concat(4, 5));
-console.log(arr3.concat([4, 1]));
-console.log(arr3.concat([4, 5], [[4, 7]]));
-console.log(arr3);
+// let arr3 = [1, 2, 3];
+// arr3 = arr3.concat(8);
+// console.log(arr3.concat(4, 5));
+// console.log(arr3.concat([4, 1]));
+// console.log(arr3.concat([4, 5], [[4, 7]]));
+// console.log(arr3);
 
-const arr4 = [1, 2, 3, 3, 5, 3];
-console.log(arr4.indexOf(3));
-console.log(arr4.indexOf(3, 4));
+// const arr4 = [1, 2, 3, 3, 5, 3];
+// console.log(arr4.indexOf(3));
+// console.log(arr4.indexOf(3, 4));
 
-const arr5 = [2, 3, 5];
+// const arr5 = [2, 3, 5];
 
-function foo(value) {
-  const sum = value * this;
-  console.log(sum);
-}
-arr5.forEach(foo, 7);
+// function foo(value) {
+//   const sum = value * this;
+//   console.log(sum);
+// }
+// arr5.forEach(foo, 7);
 
-function isBig(element /* index, array */) {
-  return element >= 10;
-}
-const filtered = [11, 3, 7, 50, 25].filter(isBig);
-console.log(filtered);
+// function isBig(element /* index, array */) {
+//   return element >= 10;
+// }
+// const filtered = [11, 3, 7, 50, 25].filter(isBig);
+// console.log(filtered);
 
-const found = arr5.find(item => item === 5);
-console.log(found);
+// const found = arr5.find(item => item > 2);
+// console.log(found);
 
-const array6 = [7, -2, 3, -11, 12, 'z'];
-array6.sort((a, b) => a - b);
-console.log(array6);
+// const array6 = [7, -2, 3, -11, 12, 'z'];
+// console.log(array6.sort());
+// array6.sort((a, b) => a - b);
+// console.log(array6);
+// console.log(Array.isArray(array6));
 
-console.log(Array.isArray(array6));
+// function camelize(str) {
+//   return str
+//     .split('-')
+//     .map((word, index) => (index === 0 ? word : word[0].toUpperCase() + word.slice(1)))
+//     .join('');
+// }
+// console.log(camelize('aaaa-ttttttt-ggggg'));
 
-function camelize(str) {
-  return str
-    .split('-') // разбивает 'my-long-word' на массив ['my', 'long', 'word']
-    .map(
-      // Переводит в верхний регистр первые буквы всех элементом массива за исключением первого
-      // превращает ['my', 'long', 'word'] в ['my', 'Long', 'Word']
-      (word, index) => (index == 0 ? word : word[0].toUpperCase() + word.slice(1))
-    )
-    .join(''); // соединяет ['my', 'Long', 'Word'] в 'myLongWord'
-}
+// const arr = [1, 2, 3, 4, 5, 6, 7, 10, 15];
+// console.log(Math.max(...arr));

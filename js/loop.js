@@ -4,8 +4,7 @@ for (let x = 0; x < 5; x += 1) {
 }
 console.log(y);
 
-const t = 0;
-let t2 = t;
+let t2 = 0;
 
 while (y < 30) {
   console.log(`value y:${(y += 2)} / step:${(t2 += 1)}`);

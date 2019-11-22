@@ -2,7 +2,8 @@ module.exports = {
     "env": {
         "browser": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "commonjs": true
     },
     "extends": ["airbnb", "prettier"],
     "globals": {
@@ -11,7 +12,9 @@ module.exports = {
     },
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true
+            "jsx": true,
+            "classes": true,
+            "defaultParams": true
         },
         "ecmaVersion": 2018,
         "sourceType": "module"
