@@ -252,21 +252,67 @@
 // console.log(moveZeros([1, 2, 0, 1, 0, 1, 0, 3, 0, 1]));
 
 // 21
-// function dirReduc(arr){
-//   let t = "NORTH";
-//   let b = "SOUTH";
-//   let l = "WEST";
-//   let r = "EAST";
-//   for ( let i = 0; i < arr.length; i++){
-//     if ((arr[i] === t && arr[i - 1] === b) || (arr[i - 1] === t && arr[i] === b)){
+// function dirReduc(arr) {
+//   const t = 'NORTH';
+//   const b = 'SOUTH';
+//   const l = 'WEST';
+//   const r = 'EAST';
+//   for (let i = 0; i < arr.length; i++) {
+//     if ((arr[i] === t && arr[i - 1] === b) || (arr[i - 1] === t && arr[i] === b)) {
 //       arr.splice(i - 1, 2);
 //       i = 0;
-//     };
-//     if ((arr[i] === l && arr[i - 1] === r) || (arr[i - 1] === l && arr[i] === r)){
+//     }
+//     if ((arr[i] === l && arr[i - 1] === r) || (arr[i - 1] === l && arr[i] === r)) {
 //       arr.splice(i - 1, 2);
 //       i = 0;
 //     }
 //   }
 //   return arr;
 // }
-// console.log(dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]))
+// console.log(dirReduc(['NORTH', 'SOUTH', 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST']));
+
+// 22
+// function formatDuration(t) {
+//   let seconds = t;
+//   if (!seconds) return 'now';
+//   let date = '';
+//   let minute;
+//   let hour;
+//   let day;
+//   let year;
+//   if (seconds >= 31536000) {
+//     year = Math.floor(seconds / 31536000);
+//     year > 1 ? (date += `${year} years`) : (date += `${year} year`);
+//     seconds %= 31536000;
+//   }
+//   if (seconds >= 86400) {
+//     day = Math.floor(seconds / 86400);
+//     seconds %= 86400;
+//     if (date && !seconds) date += ` and `;
+//     if (date && seconds) date += `, `;
+//     day > 1 ? (date += `${day} days`) : (date += `${day} day`);
+//   }
+//   if (seconds >= 3600) {
+//     hour = Math.floor(seconds / 3600);
+//     seconds %= 3600;
+//     if (date && !seconds) date += ` and `;
+//     if (date && seconds) date += `, `;
+//     hour > 1 ? (date += `${hour} hours`) : (date += `${hour} hour`);
+//   }
+//   if (seconds >= 60) {
+//     minute = Math.floor(seconds / 60);
+//     seconds %= 60;
+//     if (date && !seconds) date += ` and `;
+//     if (date && seconds) date += `, `;
+//     minute > 1 ? (date += `${minute} minutes`) : (date += `${minute} minute`);
+//   }
+//   if (seconds % 60) {
+//     if (date) date += ` and `;
+//     seconds > 1 ? (date += `${seconds} seconds`) : (date += `${seconds} second`);
+//   }
+//   return date;
+// }
+// console.log(formatDuration(52));
+// console.log(formatDuration(3662));
+// console.log(formatDuration(87888));
+// console.log(formatDuration(32079121));
