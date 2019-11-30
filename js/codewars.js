@@ -370,17 +370,17 @@
 // console.log(inArray(a1, a2));
 
 // 26
-function findNb(m) {
-  let total = 0;
-  let n = 0;
+// function findNb(m) {
+//   let sum = 0;
+//   let n = 0;
 
-  while (total < m) {
-    n += 1;
-    total += n ** 3;
-  }
+//   while (sum < m) {
+//     n += 1;
+//     sum += n ** 3;
+//   }
 
-  return total === m ? n : -1;
-}
+//   return sum === m ? n : -1;
+// }
 
-console.log(findNb(4183059834009));
-console.log(findNb(24723578342962));
+// console.log(findNb(4183059834009));
+// console.log(findNb(24723578342962));
