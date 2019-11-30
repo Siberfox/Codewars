@@ -347,3 +347,40 @@
 //   return Math.round((Math.pow(Phi, n) - Math.pow(phi, n)) / sqRootOf5);
 // }
 // console.log(fib(3));
+
+// 25
+// function inArray(array1, array2) {
+//   const arr1 = [...array1];
+//   const arr2 = array2.join(',');
+//   const arr3 = [];
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr2.includes(arr1[i])) {
+//       arr3.push(arr1[i]);
+//     }
+//   }
+//   return arr3.sort();
+// }
+
+// function inArray(array1, array2) {
+//   return array1.filter(el => array2.join(' ').includes(el)).sort();
+// }
+
+// const a1 = ['xyz', 'live', 'strong'];
+// const a2 = ['lively', 'alive', 'harp', 'sharp', 'armstrong'];
+// console.log(inArray(a1, a2));
+
+// 26
+function findNb(m) {
+  let total = 0;
+  let n = 0;
+
+  while (total < m) {
+    n += 1;
+    total += n ** 3;
+  }
+
+  return total === m ? n : -1;
+}
+
+console.log(findNb(4183059834009));
+console.log(findNb(24723578342962));
