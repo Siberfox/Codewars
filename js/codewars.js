@@ -316,3 +316,34 @@
 // console.log(formatDuration(3662));
 // console.log(formatDuration(87888));
 // console.log(formatDuration(32079121));
+
+// 23
+// const array = [[1, 4, 8, 9], [6, 2, 11, 1], [8, 0, 3, -5], [-2, 10, 8, 1]];
+// function matrix(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     arr[i].splice(i);
+//   }
+//   return arr.flat().reduce((a, b) => a + b);
+// }
+// console.log(matrix(array));
+
+// 24
+// const array = [-2, 10, 8, 1];
+// function reverse(arr) {
+//   for (let i = arr.length - 1; i > 0; i--) {
+//     arr.push(...arr.splice(i - 1, 1));
+//   }
+//   return arr;
+// }
+// console.log(reverse(array));
+
+//
+// function fib(n) {
+//   const sqRootOf5 = Math.sqrt(5);
+
+//   const Phi = (1 + sqRootOf5) / 2;
+//   const phi = (1 - sqRootOf5) / 2;
+
+//   return Math.round((Math.pow(Phi, n) - Math.pow(phi, n)) / sqRootOf5);
+// }
+// console.log(fib(3));

@@ -1,3 +1,5 @@
-#HELLO
+## **Codewars challenges** and etc.
 
-This repository for my training.
+---
+
+![logo](https://www.codewars.com/users/Siberfox/badges/small)
