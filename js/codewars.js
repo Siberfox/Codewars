@@ -1,6 +1,8 @@
 /* eslint-disable no-console */
 
-// 1
+// 1 --------------------------------------------------------------------------
+// How good are you really?
+
 // function betterThanAverage(classPoints, yourPoints) {
 //   let total = 0;
 //   for (let i = 0; i < classPoints.length; i += 1) {
@@ -13,14 +15,17 @@
 // console.log(betterThanAverage([3, 10, 12], 8));
 // console.log(betterThanAverage([1, 2, 3, 14], 6));
 
-// // 2
+// // 2 ----------------------------------------------------------------
+// Binary Addition
+
 // function addBinary(a, b) {
 //   // c = a + b;
 //   return (a + b).toString(2);
 // }
 // console.log(addBinary(3, 2));
 
-// // 3
+// 3 ----------------------------------------------------------------------
+
 // for (let i = 0; i <= 100; i += 1) {
 //   let result = '';
 //   if (i % 3 === 0 && i > 0) {
@@ -35,7 +40,8 @@
 //   console.log(result);
 // }
 
-// 4
+// 4 ------------------------------------------------------------------------
+
 // function fib(n) {
 //   return n <= 1 ? n : fib(n - 1) + fib(n - 2);
 // }
@@ -56,7 +62,9 @@
 // const t1 = performance.now();
 // console.log(`Call to doSomething took ${t1 - t0} milliseconds.`);
 
-// 5
+// 5 ------------------------------------------------------------------
+// Rectangle into Squares
+
 // function sqInRect(lng, wdth) {
 //   if (lng === wdth) return null;
 //   let a = lng;
@@ -75,7 +83,9 @@
 // }
 // console.log(sqInRect(5, 10));
 
-// 6
+// 6 ------------------------------------------------------------------------
+// CamelCase Method
+
 // String.prototype.camelCase = function() {
 //   if (!this.length) return "";
 //   return this.trim()
@@ -87,13 +97,17 @@
 // console.log(" camel case word".camelCase());
 // console.log("".camelCase());
 
-// 7
+// 7 ----------------------------------------------------------------------
+// Categorize New Member
+
 // function openOrSenior(data){
 //   return data.map((arr) => arr[0] >= 55 && arr[1] > 7 ? 'Senior' : 'Open')
 // }
 // console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]));
 
-// 8
+// 8 ---------------------------------------------------------------------
+// Beginner Series #3 Sum of Numbers
+
 // function getSum(a, b) {
 //   const max = Math.max(a, b);
 //   const min = Math.min(a, b);
@@ -104,7 +118,9 @@
 // console.log(getSum(5, -3));
 // console.log(getSum(5, 7));
 
-// 9
+// 9 -----------------------------------------------------------------------
+// Vowel Count
+
 // function getCount(str) {
 //   let vowelsCount = 0;
 //   const vowels = ['a', 'e', 'i', 'o'];
@@ -115,21 +131,27 @@
 // }
 // console.log(getCount('asfsdgojrefjdskweaaaa'));
 
-// // 10
+// 10 -------------------------------------------------------------------------
+// Get the Middle Character
+
 // function getMiddle(s){
 //   return (s.length % 2) ? s[(s.length-1)/2] : s[s.length/2 - 1] + s[s.length/2]
 // }
 // console.log(getMiddle("test"));
 // console.log(getMiddle("testing"));
 
-// 11
+// 11 --------------------------------------------------------------------------
+// Highest and Lowest
+
 // function highAndLow(numbers) {
 //   const num = numbers.split(' ');
 //   return `${Math.max(...num)} ${Math.min(...num)}`;
 // }
 // console.log(highAndLow('4 5 29 54 4 0 -214 542 -64 1 -3 6 -6'));
 
-// 12
+// 12 --------------------------------------------------------------------------
+// Shortest Word
+
 // function findShort(s) {
 //   const n = s.split(' ');
 //   let count = n[0].length;
@@ -142,7 +164,9 @@
 // }
 // console.log(findShort('bitcoin take over the world maybe who knows perhaps'));
 
-// 13
+// 13 ---------------------------------------------------------------------
+// Descending Order
+
 // function descendingOrder(n) {
 //   const res = String(n)
 //     .split('')
@@ -153,12 +177,24 @@
 // }
 // console.log(descendingOrder(123456789));
 
-// 14
-// let n = '.... . -.--   .--- ..- -.. .';
-// let c = n.split('  ').map((item) => item.split(' '));
-// console.log(c);
+// 14 -------------------------------------------------------------------
+// Decode the Morse code
 
-// 15
+// const decodeMorse = function(morseCode) {
+//   const morse = morseCode.split('  ').map(item => item.split(' '));
+//   let result = '';
+//   for (const item of morse) {
+//     for (const i of item) {
+//       if (MORSE_CODE[i]) result += MORSE_CODE[i];
+//     }
+//     result += ' ';
+//   }
+//   return result.trim();
+// };
+
+// 15-----------------------------------------------------------------
+// Next bigger number with the same digits
+
 // function nextBigger(n){
 //   let  num = +String(n).split('').sort((a,b)=> b-a).join('');
 //   return num > n ? num : -1
@@ -182,7 +218,9 @@
 // console.log(nextBigger(1323));
 // console.log(nextBigger(387286));
 
-// 16
+// 16--------------------------------------------------------------------
+// Sum of Pairs
+
 // const sum_pairs = function(ints, s) {
 //   const viewedValues = [];
 //   for (let i = 0; i <= ints.length; i++) {
@@ -198,7 +236,9 @@
 // l1 = [1, 4, 8, 7, 3, 15];
 // console.log(sum_pairs(l1, 8));
 
-// 17
+// 17 --------------------------------------------------------------------
+// Sum of Digits / Digital Root
+
 // function digital_root(n) {
 //   while (n > 10) {
 //     n = n
@@ -211,7 +251,9 @@
 // }
 // console.log(digital_root(4565));
 
-// // 18
+// // 18 -------------------------------------------------------------------
+// Equal Sides Of An Array
+
 // function findEvenIndex(arr) {
 //   for (let i = 0; i < arr.length; i++) {
 //     const left = arr.slice(0, i).reduce((a, b) => a + b, 0);
@@ -223,7 +265,9 @@
 // console.log(findEvenIndex([1, 100, 50, -51, 1, 1]));
 // console.log(findEvenIndex([20, 10, 30, 10, 10, 15, 35]));
 
-// 19
+// 19 -------------------------------------------------------------------
+// Maximum subarray sum
+
 // const maxSequence = function(arr) {
 //   let mainCounter = 0;
 //   let countSum = 0;
@@ -238,7 +282,9 @@
 // console.log(maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
 // console.log(maxSequence([1, 2, 3, 4]));
 
-// 20
+// 20 ------------------------------------------------------------------
+// Moving Zeros To The End
+
 // const moveZeros = function(arr) {
 //   let a = [];
 //   for (let i = 0; i < arr.length; i++) {
@@ -251,7 +297,9 @@
 // };
 // console.log(moveZeros([1, 2, 0, 1, 0, 1, 0, 3, 0, 1]));
 
-// 21
+// 21---------------------------------------------------------------------
+// Directions Reduction
+
 // function dirReduc(arr) {
 //   const t = 'NORTH';
 //   const b = 'SOUTH';
@@ -271,7 +319,9 @@
 // }
 // console.log(dirReduc(['NORTH', 'SOUTH', 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST']));
 
-// 22
+// 22 ------------------------------------------------------------------------
+// Human readable duration format
+
 // function formatDuration(t) {
 //   let seconds = t;
 //   if (!seconds) return 'now';
@@ -317,7 +367,8 @@
 // console.log(formatDuration(87888));
 // console.log(formatDuration(32079121));
 
-// 23
+// 23 ----------------------------------------------------------------
+
 // const array = [[1, 4, 8, 9], [6, 2, 11, 1], [8, 0, 3, -5], [-2, 10, 8, 1]];
 // function matrix(arr) {
 //   for (let i = 0; i < arr.length; i++) {
@@ -327,7 +378,8 @@
 // }
 // console.log(matrix(array));
 
-// 24
+// 24 -----------------------------------------------------------------
+
 // const array = [-2, 10, 8, 1];
 // function reverse(arr) {
 //   for (let i = arr.length - 1; i > 0; i--) {
@@ -348,7 +400,9 @@
 // }
 // console.log(fib(3));
 
-// 25
+// 25 -----------------------------------------------------------------
+// Which are in?
+
 // function inArray(array1, array2) {
 //   const arr1 = [...array1];
 //   const arr2 = array2.join(',');
@@ -369,7 +423,9 @@
 // const a2 = ['lively', 'alive', 'harp', 'sharp', 'armstrong'];
 // console.log(inArray(a1, a2));
 
-// 26
+// 26 -------------------------------------------------------------------
+// Build a pile of Cubes
+
 // function findNb(m) {
 //   let sum = 0;
 //   let n = 0;
@@ -385,7 +441,8 @@
 // console.log(findNb(4183059834009));
 // console.log(findNb(24723578342962));
 
-// 27
+// 27 -----------------------------------------------------------------------
+
 // function sumStrings(a, b) {
 //   if (a > Number.MAX_SAFE_INTEGER || b > Number.MAX_SAFE_INTEGER) {
 //     return BigInt(a) + BigInt(b);
@@ -395,7 +452,9 @@
 
 // console.log(sumStrings('712569312664357328695151392', '8100824045303269669937'));
 
-// 28
+// 28 ------------------------------------------------------------------------
+// Split Strings
+
 // function solution(str){
 //   let arr = [];
 //   if(str.length % 2) str += '_';
@@ -407,7 +466,8 @@
 // console.log(solution('abcdef'));
 // console.log(solution('abc'));
 
-// 29
+// 29 ----------------------------------------------------------------------
+// Sum of Intervals
 
 // const test1 = [[1, 5]];
 // const test2 = [[1, 4], [7, 10], [3, 5], [8, 11], [15, 16]];
