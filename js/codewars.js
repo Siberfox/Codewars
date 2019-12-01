@@ -384,3 +384,54 @@
 
 // console.log(findNb(4183059834009));
 // console.log(findNb(24723578342962));
+
+// 27
+// function sumStrings(a, b) {
+//   if (a > Number.MAX_SAFE_INTEGER || b > Number.MAX_SAFE_INTEGER) {
+//     return BigInt(a) + BigInt(b);
+//   }
+//   return (+a + +b).toString();
+// }
+
+// console.log(sumStrings('712569312664357328695151392', '8100824045303269669937'));
+
+// 28
+// function solution(str){
+//   let arr = [];
+//   if(str.length % 2) str += '_';
+//   for (let i = 0; i < str.length; i+= 2) {
+//     arr.push(str.slice(i,i + 2))
+//   }
+//   return arr;
+// }
+// console.log(solution('abcdef'));
+// console.log(solution('abc'));
+
+// 29
+
+// const test1 = [[1, 5]];
+// const test2 = [[1, 4], [7, 10], [3, 5], [8, 11], [15, 16]];
+// const test3 = [[1, 5], [10, 20], [1, 6], [16, 19], [5, 11]];
+
+// function sumIntervals(arr) {
+//   arr.sort((a, b) => a[0] - b[0]);
+//   let min = arr[0][0];
+//   let max = arr[0][1];
+//   let sum = 0;
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i][0] < max && arr[i][1] > max) {
+//       max = arr[i][1];
+//     }
+//     if (arr[i][0] > max) {
+//       sum += max - min;
+//       min = arr[i][0];
+//       max = arr[i][1];
+//     }
+//   }
+//   sum += max - min;
+//   return sum;
+// }
+
+// console.log(sumIntervals(test1)); // 4
+// console.log(sumIntervals(test2)); // 7
+// console.log(sumIntervals(test3)); // 19
