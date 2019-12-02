@@ -585,3 +585,101 @@
 // }
 
 // console.log(solution([-6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20]));
+
+// 33 -----------------------------------------------------------------------
+// Calculating with Functions
+
+// function zero(num) {
+//   return num ? Math.floor(eval(0 + num)) : 0;
+// }
+// function one(num) {
+//   return num ? Math.floor(eval(1 + num)) : 1;
+// }
+// function two(num) {
+//   return num ? Math.floor(eval(2 + num)) : 2;
+// }
+// function three(num) {
+//   return num ? Math.floor(eval(3 + num)) : 3;
+// }
+// function four(num) {
+//   return num ? Math.floor(eval(4 + num)) : 4;
+// }
+// function five(num) {
+//   return num ? Math.floor(eval(5 + num)) : 5;
+// }
+// function six(num) {
+//   return num ? Math.floor(eval(6 + num)) : 6;
+// }
+// function seven(num) {
+//   return num ? Math.floor(eval(7 + num)) : 7;
+// }
+// function eight(num) {
+//   return num ? Math.floor(eval(8 + num)) : 8;
+// }
+// function nine(num) {
+//   return num ? Math.floor(eval(9 + num)) : 9;
+// }
+
+// function plus(n) {
+//   return `+${n}`;
+// }
+// function minus(n) {
+//   return `-${n}`;
+// }
+// function times(n) {
+//   return `*${n}`;
+// }
+// function dividedBy(n) {
+//   return `/${n}`;
+// }
+
+// console.log(seven(times(five())));
+
+// 34----------------------------------------------------------
+// Find The Parity Outlier
+
+// function findOutlier(arr) {
+//   let even = 0;
+//   let odd = 0;
+//   for (let i = 0; i < 3; i++) {
+//     arr[i] % 2 ? (odd += 1) : (even += 1);
+//   }
+//   return even > odd ? arr.find(el => el % 2) : arr.find(el => !(el % 2));
+// }
+// console.log(findOutlier([1, 2, 3]));
+// console.log(findOutlier([2, 6, 8, 10, 3]));
+// console.log(findOutlier([160, 3, 1719, 19, 11, 13, -21]));
+
+// 35-------------------------------------------------------------
+// Adding Big Numbers
+
+// function add(a, b) {
+//   const arrA = a.split('').reverse();
+//   const arrB = b.split('').reverse();
+//   const arr = [];
+//   const length = arrA.length > arrB.length ? arrA.length : arrB.length;
+
+//   for (let i = 0; i < length; i++) {
+//     if (!arrB[i]) arr.push(arrA[i]);
+//     if (!arrA[i]) arr.push(arrB[i]);
+//     if (arrA[i] && arrB[i]) arr.push(`${+arrA[i] + +arrB[i]}`);
+//   }
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 9) {
+//       arr[i] = arr[i].split('');
+//       arr[i + 1] ? (arr[i + 1] = `${+arr[i][0] + +arr[i + 1]}`) : (arr[i + 1] = arr[i][0]);
+//       arr[i].shift(0);
+//     }
+//   }
+//   if (arr[arr.length - 1] === '0') arr.pop();
+
+//   return []
+//     .concat(...arr)
+//     .reverse()
+//     .join('');
+// }
+
+// console.log(add('1372', '69'));
+// console.log(add('00103', '08567'));
+// console.log(add('888', '222'));
