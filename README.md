@@ -1,4 +1,4 @@
-## **Codewars challenges** and etc.
+## **Codewars challenges** etc.
 
 ---
 

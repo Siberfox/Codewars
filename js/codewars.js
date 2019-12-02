@@ -561,3 +561,27 @@
 // console.log(nextSmaller(907)); // 790
 // console.log(nextSmaller(531)); // 513
 // console.log(nextSmaller(1027)); // -1
+
+// 32 ----------------------------------------------------------------------
+// Range Extraction
+
+// function solution(list) {
+//   const arr = [];
+//   for (let i = 0; i < list.length; i++) {
+//     arr.push(list[i]);
+//     if (list[i] + 1 === list[i + 1]) {
+//       while (list[i] + 1 === list[i + 1]) {
+//         i++;
+//       }
+//       if (list[i] - arr[arr.length - 1] === 1) {
+//         arr.push(list[i]);
+//       }
+//       if (list[i] - arr[arr.length - 1] > 1) {
+//         arr[arr.length - 1] = `${arr[arr.length - 1]}-${list[i]}`;
+//       }
+//     }
+//   }
+//   return arr.join(',');
+// }
+
+// console.log(solution([-6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20]));
