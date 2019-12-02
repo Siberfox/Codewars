@@ -495,3 +495,69 @@
 // console.log(sumIntervals(test1)); // 4
 // console.log(sumIntervals(test2)); // 7
 // console.log(sumIntervals(test3)); // 19
+
+// 30 -------------------------------------------------------------
+// // Snail
+
+// const snail = function(arr) {
+//   const array = [];
+//   let a = 0;
+//   let b = 0;
+//   while (arr.length > 0) {
+//     if (a === 0 && b === 0 && arr.length > 0) {
+//       array.push(...arr.splice(0, 1));
+//       b = 1;
+//     }
+//     if (a === 0 && b > 0 && arr.length > 0) {
+//       for (let j = 0; j < arr.length; j++) {
+//         array.push(...arr[j].splice(arr[j].length - 1));
+//       }
+//       a = 1;
+//     }
+//     if (a > 0 && b > 0 && arr.length > 0) {
+//       arr[arr.length - 1].reverse();
+//       array.push(...arr.splice(arr.length - 1));
+//       b = 0;
+//     }
+//     if (a > 0 && b === 0 && arr.length > 0) {
+//       for (let k = arr.length - 1; k >= 0; k--) {
+//         array.push(...arr[k].splice(0, 1));
+//       }
+//       a = 0;
+//     }
+//     console.log(arr);
+//   }
+//   return [].concat(...array);
+// };
+
+// console.log(snail([[1, 2, 3], [4, 5, 6], [7, 8, 9]]));
+// console.log(
+//   snail([
+//     [1, 2, 3, 4, 5],
+//     [6, 7, 8, 9, 10],
+//     [11, 12, 13, 14, 15],
+//     [16, 17, 18, 19, 20],
+//     [21, 22, 23, 24, 25]
+//   ])
+// );
+
+// 31 ----------------------------------------------------------------
+// Next smaller number with the same digits
+
+// function nextSmaller(n) {
+//   let arr = n.toString().split('');
+//   for (let i = arr.length - 1; i > 0; i--) {
+//     if (arr[i] < arr[i - 1]) {
+//       const end = arr.splice(i).sort((a, b) => b - a);
+//       const a = end.findIndex(el => el < arr[i - 1]);
+//       arr = [...arr, ...end];
+//       [arr[i - 1], arr[i + a]] = [arr[i + a], arr[i - 1]];
+//       return arr[0] > 0 ? +arr.join('') : -1;
+//     }
+//   }
+//   return -1;
+// }
+
+// console.log(nextSmaller(907)); // 790
+// console.log(nextSmaller(531)); // 513
+// console.log(nextSmaller(1027)); // -1
