@@ -4,4 +4,4 @@
 
 ![logo](https://www.codewars.com/users/Siberfox/badges/small)
 
-[Профиль](https://www.codewars.com/users/Siberfox 'Я ссылка')
+[Profile](https://www.codewars.com/users/Siberfox 'Link')
