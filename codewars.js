@@ -683,3 +683,26 @@
 // console.log(add('1372', '69'));
 // console.log(add('00103', '08567'));
 // console.log(add('888', '222'));
+
+// 36 ------------------------------------------------------------------------------------
+
+// Bubble sort
+
+// const myArray = [3, 7, 4, 5, 2, 1, 8, 9, 0];
+
+// function bubbleSort(array) {
+//   const arr = array;
+//   let swapped;
+//   do {
+//     swapped = false;
+//     for (let i = 0; i < arr.length; i++) {
+//       if (arr[i] > arr[i + 1]) {
+//         [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+//         swapped = true;
+//       }
+//     }
+//   } while (swapped);
+//   return arr;
+// }
+
+// console.log(bubbleSort(myArray));
