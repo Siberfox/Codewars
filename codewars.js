@@ -1,4 +1,7 @@
+/* eslint-disable strict */
 /* eslint-disable no-console */
+
+'use strict';
 
 // 1 --------------------------------------------------------------------------
 // How good are you really?
@@ -686,23 +689,23 @@
 
 // 36 ------------------------------------------------------------------------------------
 
-// Bubble sort
+//  Bubble sort
 
 // const myArray = [3, 7, 4, 5, 2, 1, 8, 9, 0];
 
-// function bubbleSort(array) {
-//   const arr = array;
-//   let swapped;
-//   do {
-//     swapped = false;
-//     for (let i = 0; i < arr.length; i++) {
-//       if (arr[i] > arr[i + 1]) {
-//         [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
-//         swapped = true;
-//       }
-//     }
-//   } while (swapped);
-//   return arr;
-// }
-
+function bubbleSort(array) {
+  const arr = array;
+  let swapped = true;
+  while (swapped) {
+    swapped = false;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > arr[i + 1]) {
+        [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+        swapped = true;
+      }
+    }
+  }
+  return arr;
+}
+module.exports = bubbleSort;
 // console.log(bubbleSort(myArray));
