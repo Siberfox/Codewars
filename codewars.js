@@ -7,12 +7,7 @@ function validSolution(arr) {
   for (let i = 0; i < arr.length; i++) {
     const hor = [];
     const ver = [];
-    if (i === 3) {
-      firstSqr = [];
-      secondSqr = [];
-      thirdSqr = [];
-    }
-    if (i === 6) {
+    if (i === 3 || i === 6) {
       firstSqr = [];
       secondSqr = [];
       thirdSqr = [];
