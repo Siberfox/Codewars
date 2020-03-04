@@ -1,6 +1,6 @@
 const bubbleSort = require('../codewars');
 
-describe('Bubble Sort:', () => {
+xdescribe('Bubble Sort:', () => {
   test('should return sorted array of numbers', () => {
     expect(bubbleSort([3, 2, 1])).toEqual([1, 2, 3]);
   });
