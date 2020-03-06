@@ -1,7 +1,7 @@
 const validSolution = require('../codewars');
 
 describe('Sudoku', () => {
-  test('should valid', () => {
+  test('should be valid', () => {
     expect(
       validSolution([
         [5, 3, 4, 6, 7, 8, 9, 1, 2],
@@ -16,7 +16,7 @@ describe('Sudoku', () => {
       ])
     ).toBe(true);
   });
-  test('should not valid', () => {
+  test('should not be valid', () => {
     expect(
       validSolution([
         [5, 3, 4, 6, 7, 8, 9, 1, 2],
@@ -31,7 +31,7 @@ describe('Sudoku', () => {
       ])
     ).toBe(false);
   });
-  test('should not valid 3x3', () => {
+  test('should not be valid 3x3', () => {
     expect(
       validSolution([
         [1, 2, 3, 4, 5, 6, 7, 8, 9],

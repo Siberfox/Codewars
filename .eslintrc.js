@@ -25,6 +25,7 @@ module.exports = {
     'no-alert': 'off',
     'no-unused-vars': 'warn',
     'no-console': 'off',
+    strict: 'warn',
     'prettier/prettier': ['error'],
     'prefer-const': 'warn',
     'jest/no-disabled-tests': 'warn',
