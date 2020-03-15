@@ -1,12 +1,13 @@
 // Sudoku Solution Validator
+var a;
 
 function validSolution(arr) {
   let firstSqr = [];
   let secondSqr = [];
   let thirdSqr = [];
   for (let i = 0; i < arr.length; i++) {
-    const hor = [];
-    const ver = [];
+    const row = [];
+    const col = [];
     if (i === 3 || i === 6) {
       firstSqr = [];
       secondSqr = [];
@@ -16,11 +17,11 @@ function validSolution(arr) {
       if (arr[j][i] === 0 || arr[i][j] === 0) {
         return false;
       }
-      if (hor[arr[i][j]] || ver[arr[j][i]]) {
+      if (row[arr[i][j]] || col[arr[j][i]]) {
         return false;
       }
-      hor[arr[i][j]] = arr[i][j];
-      ver[arr[j][i]] = arr[j][i];
+      row[arr[i][j]] = arr[i][j];
+      col[arr[j][i]] = arr[j][i];
 
       if (j < 3) {
         if (firstSqr[arr[i][j]]) {
