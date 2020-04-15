@@ -1,5 +1,4 @@
 // Sudoku Solution Validator
-var a;
 
 function validSolution(arr) {
   let firstSqr = [];
