@@ -4,18 +4,22 @@ function validSolution(arr) {
   let firstSqr = [];
   let secondSqr = [];
   let thirdSqr = [];
+
   for (let i = 0; i < arr.length; i++) {
     const row = [];
     const col = [];
+
     if (i === 3 || i === 6) {
       firstSqr = [];
       secondSqr = [];
       thirdSqr = [];
     }
+
     for (let j = 0; j < arr.length; j++) {
       if (arr[j][i] === 0 || arr[i][j] === 0) {
         return false;
       }
+
       if (row[arr[i][j]] || col[arr[j][i]]) {
         return false;
       }

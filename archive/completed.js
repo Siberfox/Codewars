@@ -709,4 +709,73 @@
 // }
 // module.exports = bubbleSort;
 // console.log(bubbleSort(myArray));
+//
+// 37 ---------------------------------------------------
+//
+//  Random Hex Color
+//
+
+// function getRandomHexColor() {
+//   let color = '#';
+//   for (let i = 0; i < 6; i++) {
+//     color += Math.floor(Math.random() * 16).toString(16);
+//   }
+//   return color;
+// }
+
+// console.log(getRandomHexColor());
+// console.log(getRandomHexColor());
+// console.log(getRandomHexColor());
+// console.log(getRandomHexColor());
+
+// -------------------------------------------------------------
+
+// const input = {
+//   ' ': [5],
+//   d: [10],
+//   e: [1],
+//   H: [0],
+//   l: [2, 3, 9],
+//   o: [4, 7],
+//   r: [8],
+//   w: [6]
+// };
+
+// const buildString = m => {
+//   const result = [];
+//   for (let i in m){
+//     for (let j of m[i]) {
+//       result[j] = i
+//     }
+//   }
+//   return result.join('')
+// };
+
+// const buildString = m => {
+//   return m
+//     ? Object.keys(m)
+//         .reduce((acc, cur) => {
+//           m[cur].forEach(e => {
+//             acc[e] = cur;
+//           });
+//           return acc;
+//         }, [])
+//         .join('')
+//     : '';
+// };
+
+// console.log(buildString(input));
+// console.log(buildString(''));
+
+// -----------------------------------
+// Masonry push
+
+// let cards = [[{}, {}], [{}, {}], [{}, {}], [{}]];
+// let count = 0;
+// let arr = [{a:1},{b:2},{c:3},{v:4},{l:5},{k:6}]
+
+// for (let i = 0; i < arr.length; i++) {
+//   cards[count].push(arr[i]);
+//   count > 2 ? count = 0 : count++;
+// }
 
