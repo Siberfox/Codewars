@@ -779,3 +779,93 @@
 //   count > 2 ? count = 0 : count++;
 // }
 
+// ------------------------------------------
+// Carry
+// function add(n) {
+//   let count = n;
+//   return function curr(num) {
+//     if (!num) {
+//       return count;
+//     }
+//     count += num;
+//     return curr;
+//   };
+// }
+// console.log(add(2)(3)(4)(66)());
+
+//----------------------------------------------
+// Sum Age
+// let count = 0;
+// function sumAge(user) {
+// count += user.age;
+// if (user.children) {
+//   user.children.forEach(child => sumAge(child));
+// }
+// return count;
+// }
+
+// function sumAge(user) {
+//   return user.children
+//     ? user.children.reduce((count, child) => count + sumAge(child), user.age)
+//     : user.age;
+// }
+
+// const user = {
+//   name: 'peter',
+//   age: 40,
+//   children: [
+//     {
+//       name: 'kate',
+//       age: 20,
+//       children: [
+//         {
+//           name: 'nichole',
+//           age: 5
+//         },
+//         {
+//           name: 'ivan',
+//           age: 3
+//         }
+//       ]
+//     },
+//     {
+//       name: 'john',
+//       age: 22,
+//       children: [
+//         {
+//           name: 'suzan',
+//           age: 1
+//         },
+//         {
+//           name: 'jessica',
+//           age: 4,
+//           children: [
+//             {
+//               name: 'buba',
+//               age: 1
+//             }
+//           ]
+//         }
+//       ]
+//     },
+//     {
+//       name: 'vlad',
+//       age: 16
+//     }
+//   ]
+// };
+
+// console.log(sumAge(user));
+
+// function sequence(a, b = 1) {
+//   let count = a;
+//   return function() {
+//     return (count += b);
+//   };
+// }
+// const f = sequence(10, 3);
+// console.log(f());
+// console.log(f());
+// console.log(f());
+// console.log(f());
+
