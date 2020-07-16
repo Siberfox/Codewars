@@ -880,3 +880,25 @@
 
 // console.log(stalinSort([5, 18, 2, -7, 88, 20, 109]));
 
+// -------------------------------------------------------------
+// Double Cola
+
+// const names = ['Sheldon', 'Leonard', 'Penny', 'Rajesh', 'Howard'];
+
+// function whoIsNext(names, r) {
+//   if (r < names.length) {
+//     return names[r - 1];
+//   }
+//   let count = names.length;
+//   while (count < r) {
+//     r -= count;
+//     count *= 2;
+//   }
+
+//   return names[Math.ceil(r / (count / names.length)) - 1];
+// }
+
+// console.log(whoIsNext(names, 52));
+// console.log(whoIsNext(names, 1));
+// console.log(whoIsNext(names, 7230702951));
+
