@@ -243,14 +243,13 @@
 // Sum of Digits / Digital Root
 
 // function digital_root(n) {
-//   while (n > 10) {
-//     n = n
-//       .toString()
-//       .split('')
-//       .map(Number)
-//       .reduce((a, b) => a + b);
-//   }
-//   return n;
+//   return n > 9
+//     ? n
+//         .toString()
+//         .split('')
+//         .map(Number)
+//         .reduce((a, b) => a + b)
+//     : n;
 // }
 // console.log(digital_root(4565));
 
@@ -868,4 +867,16 @@
 // console.log(f());
 // console.log(f());
 // console.log(f());
+
+// ----------------------------------------------------------
+// function stalinSort(arr) {
+//   return arr.reduce((acc, val) => {
+//     if (acc.length === 0 || val > acc[acc.length - 1]) {
+//       acc.push(val);
+//     }
+//     return acc;
+//   }, []);
+// }
+
+// console.log(stalinSort([5, 18, 2, -7, 88, 20, 109]));
 
